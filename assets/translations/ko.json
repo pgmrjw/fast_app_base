@@ -4,5 +4,6 @@
   "clear_cache_done": "캐시가 삭제되었습니다.",
   "close": "닫기",
   "done": "완료",
-  "cancel": "취소"
+  "cancel": "취소",
+  "new_event": "최신 이벤트"
 }
