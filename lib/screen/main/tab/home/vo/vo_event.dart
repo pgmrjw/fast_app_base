@@ -1,19 +1,27 @@
 import 'package:fast_app_base/screen/main/tab/home/vo/event_type.dart';
 
 class Event {
-  final EventType type;
-  final DateTime time;
-  final String location;
+  final int id;
+  final EventType eventType;
+  final int totalNumbers;
+  final int availableNumbers;
+  final int minimumLevel;
+  final String place;
   final String region;
-  final String requirement;
+  final DateTime date;
+  final String description;
   final int fee;
 
-  Event(
-    this.type,
-    this.time,
-    this.location,
-    this.region,
-    this.requirement,
-    this.fee,
-  );
+  Event.named({
+    required this.id,
+    required this.eventType,
+    required this.totalNumbers,
+    required this.availableNumbers,
+    required this.minimumLevel,
+    required this.place,
+    required this.region,
+    required this.date,
+    required this.description,
+    required this.fee,
+  });
 }

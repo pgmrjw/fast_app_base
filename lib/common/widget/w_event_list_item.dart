@@ -22,7 +22,7 @@ class EventListItem extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              event.time.toString().text.size(14).make(),
+              event.date.toString().text.size(14).make(),
               Row(
                 children: [
                   Icon(
@@ -30,7 +30,7 @@ class EventListItem extends StatelessWidget {
                     color: context.appColors.waterIcon,
                   ),
                   width4,
-                  event.location.text.size(18).make(),
+                  event.place.text.size(18).make(),
                   width6,
                   event.region.text.size(12).make()
                 ],
@@ -38,9 +38,9 @@ class EventListItem extends StatelessWidget {
               height6,
               Row(
                 children: [
-                  event.type.name.text.size(12).make(),
+                  event.eventType.name.text.size(12).make(),
                   " / ".text.size(12).make(),
-                  event.requirement.text.make(),
+                  event.minimumLevel.text.make(),
                   " / ".text.size(12).make(),
                   if (event.fee == 0)
                     "무료".text.size(12).make()
